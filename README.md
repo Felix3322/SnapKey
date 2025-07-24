@@ -141,12 +141,13 @@ Looking for More Information? Got Questions or Need Help?
 
 <p align="center">
   <a href="https://github.com/cafali">@cafali</a> 
-  <a href="https://github.com/minteeaa">@minteeaa</a> 
+  <a href="https://github.com/minteeaa">@minteeaa</a>
+  <a href="https://github.com/felix3322">@felix3322</a>
   <a href="https://github.com/Yaw-Dev">@Yaw-Dev</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/cafali/Snapkey/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=cafali/Snapkey" />
+  <a href="https://github.com/felix3322/Snapkey/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=felix3322/Snapkey" />
   </a>
 </p>
