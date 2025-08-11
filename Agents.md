@@ -1,4 +1,4 @@
-# SnapKey v1.2.8 Agents 自动化修改规范
+# SnapKey v1.2.9 Agents 自动化修改规范
 
 ## 1. VAC Bypass 配置可调（config.cfg 可选项）
 
