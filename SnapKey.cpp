@@ -1,4 +1,4 @@
-// SnapKey 1.2.8
+// SnapKey 1.2.9
 // github.com/cafali/SnapKey
 
 #include <windows.h>
@@ -20,8 +20,8 @@ using namespace std;
 #define ID_TRAY_REBIND_KEYS             3002
 #define ID_TRAY_LOCK_FUNCTION           3003
 #define ID_TRAY_RESTART_SNAPKEY         3004
-#define ID_TRAY_HELP                    3005 // v1.2.8
-#define ID_TRAY_CHECKUPDATE             3006 // v1.2.8
+#define ID_TRAY_HELP                    3005 // v1.2.9
+#define ID_TRAY_CHECKUPDATE             3006 // v1.2.9
 #define ID_TRAY_VAC_BYPASS_A            3007
 #define ID_TRAY_VAC_BYPASS_B            3008
 #define WM_TRAYICON                     (WM_USER + 1)
@@ -333,7 +333,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             AppendMenu(hMenu, MF_SEPARATOR, 0, NULL);
             AppendMenu(hMenu, MF_STRING, ID_TRAY_HELP, TEXT("Get Help"));
             AppendMenu(hMenu, MF_STRING, ID_TRAY_CHECKUPDATE, TEXT("Check Updates"));
-            AppendMenu(hMenu, MF_STRING, ID_TRAY_VERSION_INFO, TEXT("Version Info (1.2.8)"));
+            AppendMenu(hMenu, MF_STRING, ID_TRAY_VERSION_INFO, TEXT("Version Info (1.2.9)"));
             AppendMenu(hMenu, MF_SEPARATOR, 0, NULL);
             // exit
             AppendMenu(hMenu, MF_STRING, ID_TRAY_EXIT_CONTEXT_MENU_ITEM, TEXT("Exit SnapKey"));
@@ -433,7 +433,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 // version information window
 std::string GetVersionInfo() {
-    return "SnapKey v1.2.8 (R17)\n"
+    return "SnapKey v1.2.9 (R17)\n"
            "Version Date: June 19, 2025\n"
            "Repository: github.com/cafali/SnapKey\n"
            "License: MIT License\n";
@@ -450,7 +450,6 @@ void RestoreConfigFromBackup(const std::string& backupFilename, const std::strin
         MessageBox(NULL, TEXT("Default config restored from backup successfully."), TEXT("SnapKey"), MB_ICONINFORMATION | MB_OK);
     } else {
         // backup.snapkey copy failed
-        DWORD error = GetLastError();
         std::string errorMsg = "Failed to restore config from backup.";
         MessageBox(NULL, errorMsg.c_str(), TEXT("SnapKey Error"), MB_ICONERROR | MB_OK);
     }
